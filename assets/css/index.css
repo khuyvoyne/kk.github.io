@@ -1,0 +1,107 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0%;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    text-align: right;
+}
+a.boot {
+    -webkit-transform: translate3D(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    color: #2d2d2d;
+    padding: 14px 24px 12px;
+    font-family: "Helvetica";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display:block;
+    width:90px;
+    margin:20px auto;
+    text-align:center;
+  }
+  a.boot:after {
+    padding: 0;
+    border: 2px solid #000000;
+    content: '';
+    width: 95%;
+    height: 46px;
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+  }
+  a.boot:before {
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+    content: '';
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-left: 15px solid white;
+    box-shadow: -20px 30px 30px white;
+    background: transparent;
+    top: 0px;
+    left: -15px;
+    margin-left: -1px;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+   a.boot:hover:before, a.boot:active:before, a.boot:focus:before {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translate(115%, 0);
+    -moz-transform: translate(115%, 0);
+    -ms-transform: translate(115%, 0);
+    -o-transform: translate(115%, 0);
+    transform: translate(115%, 0);
+  }
+.dva_elementa {
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav_link{
+    color: black;
+    text-decoration: none;
+    transition:color .2s linear ;
+    position: relative;
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: #3fa12e;
+}
